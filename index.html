@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Survey Form</title>
+  <meta charset='utf-8'>
+  <meta name='viewport=' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <div class='container'>
+    <header class='header'>
+      <h1 id='title' class='title'>Survey Form</h1>
+      <p id='description' class="description">Thank you for valuing your time</p>
+    </header>
+    <form id='survey-form'>
+      <div class='details'>
+        <label id='name-label'>Name <input id='name' name='name' placeholder='Enter your name' required type='text' class='control'></label>
+      </div>
+      <div class='details'>
+        <label id='email-label'>Email <input id='email' name='email' placeholder='Enter your email' required type='email' class='control'></label>
+      </div>
+      <div class='details'>
+        <label id='age-label'>Age <span class='clue'>(optional)</span> <input id='age' name='age' placeholder='Enter your age'  type='number' min='18' max='150' class='control'></label>
+      </div>
+      <div class='details'>
+        <p id='gender'>Mention your gender: </p>
+        <label><input id='recommend-male' type="radio" value='male' name='gender' class='radio' checked> Male</label>
+        <label><input id='recommend-female' type='radio' value='female' name='gender' class='radio'> Female</label>
+        <label><input id='recommend-trans' type='radio' value='trans' name='gender' class='radio' > Transgender</label>
+        <label><input id='recommend-prefernot' type='radio' value='prefernot' name='gender' class='radio' > Prefer not to say</label>
+      </div>
+      <div class='details'>
+        <p id='role' class='role qn'>Which option best describes your current role?</p>
+        <select id='dropdown' class='control'>
+          <option disabled selected option>Select one option</option>
+          <option id='student'>Student</option>
+          <option id='full-time-job'>Full Time job</option>
+          <option id='full-time-learner'>Full Time Learner</option>
+          <option id='prefer-not-say'>Prefer not to say</option>   
+          <option id='other'>Other</option>   
+        </select>
+      </div>
+      <div class='details'>
+        <p id='recommend-qn'>Would you recommend us to your friends?</p>
+        <label><input id='recommend-definitely' type="radio" value='definitely' name='recommend' class='radio' checked> Definitely</label>
+        <label><input id='recommend-maybe' type='radio' value='maybe' name='recommend' class='radio'> May be</label>
+      <label><input id='recommend-notsure' type='radio' value='notsure' name='recommend' class='radio' > Not Sure</label>
+      </div>
+      <div class='details'>
+        <p id='services'>What service you are going to register for?</p>
+        <select id='services' class='control'>
+          <option disabled selected option>Select one option</option>
+          <option id='bus'>Bus Ticket Booking</option>
+          <option id='train'>Train Tickets</option>
+          <option id='room'>Room Booking</option>
+          <option id='others'>Others</option>
+        </select>
+      </div>
+      <div>
+        <label id='if-others'>if others, <input id='if-others' type='text' placeholder='Write your query......'></label>
+      </div>
+      <div class='details'>
+        <p id='feedback'>How is your experience with our website?<span>(select all that applies)</span></p>
+        <label for='good'><input id='good' type='checkbox' name='checkbox'value='good' class='check'>Good</label>
+        <label for='need' ><input id='Need' type='checkbox' name ='checkbox' value='need' class='check'>Need to improve</label>
+        <label for='well'><input id='well' type='checkbox' name ='checkbox' value='well' class='check'>Well and good</label>
+      </div>
+      <div class='details'>
+        <p>Do you have any comments or suggestions? write them here</p>
+        <textarea for='comments' class='textarea'>Any comments........</textarea>
+      </div>
+      <div class='details'>
+        <button id='submit' type='submit' class='submit-button'>Submit</button>
+     </form>
+  </div>
+</body>
+</html>
